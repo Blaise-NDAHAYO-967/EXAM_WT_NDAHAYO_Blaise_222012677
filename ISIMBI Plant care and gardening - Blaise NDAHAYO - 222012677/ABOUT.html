@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PAYMENTS</title>
+    <style>
+        body {
+            background-color: blue;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: blue;
+            color: white;
+        }
+        header {
+            background-color: blue;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            background-color: yellow;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: pink;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: red;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .search-form {
+            text-align: right; /* Adjusted to right but within normal flow */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center; /* Centered navigation links */
+        }
+        ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        ul li a {
+            padding: 1px;
+            color: white;
+            background-color: grey;
+            text-decoration: none;
+            margin-right: 1px;
+        }
+        /* Updated styles for settings menu */
+        .dropdown-content a {
+            display: block;
+            padding: 5px 10px;
+            color: green; /* Updated color */
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background-color: pink; /* Updated hover background color */
+        }
+        .about-section {
+            background-color: yellow;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- Search Form now right above the navigation links -->
+    <form class="search-form" role="search" action="search.php">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <ul>
+        <img src="logo.JPEG" alt="Logo" height="50" width="50">
+        <!-- List of Navigation Links -->
+               <li style="display: inline; margin-right: 1px;"><a href="./HOME.html" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">HOME</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./CONTACT.html" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">CONTACT</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./ABOUT.html" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">ABOUT</a></li>
+
+        <li style="display: inline; margin-right: 1px;"><a href="./appointments.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">appointments</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./careguides.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">careguides</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./customers.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">customers</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./gardeners.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">gardeners</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./plantissues.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">plantissues</a></li>
+         <li style="display: inline; margin-right: 1px;"><a href="./plants.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">plants</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./planttypes.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">planttypes</a></li>
+         <li style="display: inline; margin-right: 1px;"><a href="./reviews.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">reviews</a></li>
+         <li style="display: inline; margin-right: 1px;"><a href="./services.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">services</a></li>
+        <!-- Dropdown Settings Menu -->
+        <li class="dropdown">
+            <a href="#">SETTINGS</a>
+            <div class="dropdown-content">
+                <a href="register.html" style="background-color: green;">Register</a>
+                <a href="login.html" style="background-color: yellow;">Login</a>
+                <a href="logout.php" style="background-color: blue;">Logout</a>
+            </div>
+        </li>
+    </ul>
+</header>
+
+<section class="about-section">
+    <h2>About Us</h2>
+    <h3>1. Our Mission</h3>
+    <p>At our mission is to empower individuals and communities to create and maintain thriving gardens and plant environments. We aim to provide expert guidance, resources, and support to help you cultivate a green space that enhances your well-being and the health of our planet.</p>
+
+    <h3>2. Who We Are</h3>
+    <p>we are a passionate team of horticulturists, botanists, and gardening enthusiasts dedicated to sharing our love and knowledge of plants. With years of experience and a deep understanding of plant care, we are here to assist you with all your gardening needs, whether you're a beginner or a seasoned gardener.</p>
+
+    <h3>3. What We Offer</h3>
+    
+       <p><strong>Personalized Plant Care:</strong> Tailored advice and solutions for the specific needs of your plants.</strong>
+         <p><strong>Gardening Tips and Tricks:</strong> Practical tips to help you achieve a flourishing garden.</p>
+         <p><strong>Workshops and Webinars:</strong> Interactive sessions on various gardening topics, including sustainable practices, pest control, and seasonal planting.</p>
+        <p><strong>Resource Library:</strong> A comprehensive collection of articles, videos, and guides to support your gardening journey.</p>
+         <p><strong>Community Support:</strong> A vibrant community of plant lovers where you can share experiences, ask questions, and get inspired.</p>
+    
+
+    <h3>4. Why Choose Us</h3>
+    
+         <p><strong>Expert Guidance:</strong> Benefit from the expertise of seasoned professionals who are passionate about plants and gardening.</p>
+         <p><strong>Comprehensive Resources:</strong> Access a wealth of knowledge through our extensive resource library.</strong>
+         <p><strong>Community Engagement:</strong> Join a supportive community of fellow gardeners and plant enthusiasts.</p>
+        <p><strong>Sustainable Practices:</strong> Learn eco-friendly and sustainable gardening methods to promote environmental health.</strong>
+        <p><strong>Flexible Learning:</strong> Access our resources and support from the comfort of your home, with flexible options to fit your schedule.</strong>
+    
+
+    <h3>5. Our Values</h3>
+    
+        <p><strong>Sustainability:</strong> We promote eco-friendly practices to ensure a healthier planet.</p>
+         <p><strong>Education:</strong> We believe in the power of knowledge and are committed to providing high-quality educational resources.</p>
+        <p><strong>Community:</strong> We foster a sense of community and collaboration among plant lovers.</p>
+        <p><strong>Innovation:</strong> We embrace innovative techniques and tools to make gardening easier and more enjoyable.</p>
+    
+
+    <h3>6. Our Story</h3>
+    <p>Founded in 2020, ISIMBI plant care and gardering was created by a group of gardening enthusiasts who recognized the need for a comprehensive platform to support and inspire gardeners of all levels. Our journey began with the simple goal of making gardening accessible and enjoyable for everyone. Over the years, we have grown into a trusted resource, helping countless individuals create beautiful and thriving gardens.</p>
+
+    <h3>7. Get in Touch</h3>
+    <p>We’re here to help you grow and succeed in your gardening endeavors. Contact us today to learn more about our services, or join our community to start your journey towards a greener, more vibrant garden.</p>
+</section>
+
+<footer>
+    <marquee><i style="color: yellow;">&copy; 2024</i><i style="color: blue;"><b>WEB TECHNOLOGY PROJECT DESIGNED BY: NDAHAYO BLAISE</b></i></marquee>
+</footer>
+</body>
+</html>

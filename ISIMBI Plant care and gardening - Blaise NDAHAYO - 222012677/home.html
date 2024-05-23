@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+
+  <style>
+    body {
+      background-image: url('image.JPEG');
+      background-size: cover; /* Adjust this property to change the size of the background image */
+      background-position: center;
+      background-attachment: fixed;
+      color: white; /* Text color to contrast with background */
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    section {
+      padding: 160px;
+      position: relative;
+      z-index: 2;
+      color: white;
+      background: rgba(0, 0, 0, 0.5); /* Add overlay for better readability */
+    }
+    footer {
+      background-color: skyblue;
+      padding: 30px;
+      position: relative;
+      z-index: 2;
+    }
+    header {
+      background-color: blue;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      max-height: 50px; /* Adjust the logo size as needed */
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+    ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    ul li a {
+      padding: 5px 10px;
+      color: white;
+      background-color: skyblue;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .search-form {
+      text-align: right;
+    }
+    marquee {
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+<header>
+    <!-- Logo -->
+    <img src=" logo.JPEG" alt="Logo" > <!-- Replace 'logo.png' with the path to your logo image -->
+    <!-- Navigation Links -->
+    <ul>
+        <li style="display: inline; margin-right: 1px;"><a href="./HOME.html" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">HOME</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./CONTACT.html" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">CONTACT</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./ABOUT.html" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">ABOUT</a></li>
+
+        <li style="display: inline; margin-right: 1px;"><a href="./appointments.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">appointments</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./careguides.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">careguides</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./customers.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">customers</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./gardeners.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">gardeners</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./plantissues.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">plantissues</a></li>
+         <li style="display: inline; margin-right: 1px;"><a href="./plants.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">plants</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./planttypes.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">planttypes</a></li>
+         <li style="display: inline; margin-right: 1px;"><a href="./reviews.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">reviews</a></li>
+         <li style="display: inline; margin-right: 1px;"><a href="./services.php" style="padding: 1px; color: white; background-color: grey; text-decoration: none; margin-right: 1px;">services</a></li>
+        
+        <!-- Dropdown Account Menu -->
+        <li class="dropdown">
+            <a href="#">SETTINGS</a>
+            <div class="dropdown-content">
+                <a href="register.html" style="background-color: #ff6347;">Register</a>
+                <a href="login.html" style="background-color: #00bfff;">Login</a>
+                <a href="logout.php" style="background-color: #228b22;">Logout</a>
+            </div>
+        </li>
+    </ul>
+    <!-- Search Form -->
+    <form class="search-form" role="search" action="search.php">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</header>
+<center>
+    <section id="home" style="display: block;">
+      <h1>Welcome to plant  care and gardening assistance platform</h1>
+    </section>
+</center>
+<footer>
+    <marquee><i style="color: green;">&copy; 2024</i><b>WEB TECHNOLOGY EXAM</b></marquee>
+</footer>
+</body>
+</html>
